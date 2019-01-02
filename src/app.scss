@@ -1,0 +1,138 @@
+$primary: rgb(32, 130, 241);
+$secondary: #333;
+$success: rgb(26, 206, 101);
+$warning: rgb(235, 147, 15);
+$info: rgb(12, 207, 221);
+$error: rgb(224, 96, 79);
+$accent: rgb(131, 104, 204);
+
+*{
+  box-sizing: border-box;
+}
+html, body {
+  background: #444;
+  color: #eee;
+  font-family: Menlo, Courier, monospace;
+  font-size: 14px;
+  a {
+    color: $primary;
+  }
+  h1 {
+    text-align: center;
+  }
+  blockquote {
+    text-align: right;
+    width: 420px;
+    margin: 0 auto;
+    em {
+      color: $primary
+    }
+  }
+  pre#code {
+    padding: 8px;
+    background: $secondary url("code.png") no-repeat calc(100% - 26px) 0%/ 32px 32px;
+    color: $primary;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: .75rem;
+    line-height: 1.25;
+    border-radius: 3px;
+    max-height: 270px;
+    overflow-y: auto;
+    &.primary {
+      color: $primary;
+    }
+    &.secondary {
+      color: #eee;
+    }
+    &.success {
+      color: $success;
+    }
+    &.info {
+      color: $info;
+    }
+    &.warning {
+      color: $warning;
+    }
+    &.error {
+      color: $error;
+    }
+    &.accent {
+      color: $accent;
+    }
+  }
+  .btn {
+    padding: 5px 10px;
+    margin: 2.5px;
+    font: inherit;
+    cursor: pointer;
+    background: #eee;
+    color: #333;
+    border: 1px solid rgba(#333, .5);
+    font-weight: bold;
+    &.primary {
+      background: transparent;
+      color: $primary;
+      border-color: rgba($primary, .5);
+      &:hover, &:focus {
+        background: $primary;
+      }
+    }
+    &.secondary {
+      background: transparent;
+      color: $secondary;
+      border-color: rgba($secondary, .5);
+      &:hover, &:focus {
+        background: $secondary;
+      }
+    }
+    &.success {
+      background: transparent;
+      color: $success;
+      border-color: rgba($success, .5);
+      &:hover, &:focus {
+        background: $success;
+      }
+    }
+    &.warning {
+      background: transparent;
+      color: $warning;
+      border-color: rgba($warning, .5);
+      &:hover, &:focus {
+        background: $warning;
+      }
+    }
+    &.info {
+      background: transparent;
+      color: $info;
+      border-color: rgba($info, .5);
+      &:hover, &:focus {
+        background: $info;
+      }
+    }
+    &.error {
+      background: transparent;
+      color: $error;
+      border-color: rgba($error, .5);
+      &:hover, &:focus {
+        background: $error;
+      }
+    }
+    &.accent {
+      background: transparent;
+      color: $accent;
+      border-color: rgba($accent, .5);
+      &:hover, &:focus {
+        background: $accent;
+      }
+    }
+    border-width: 1px 1px 3px;
+    border-radius: 3px;
+    transition: all .25s ease-in-out;
+    &:hover, &:focus {
+      color: #fff;
+      border: 1px solid rgba(#000, .1);
+      border-width: 1px 1px 3px;
+    }
+  }
+}

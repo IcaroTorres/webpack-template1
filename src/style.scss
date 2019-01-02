@@ -1,0 +1,13 @@
+$bluegrey: rgb(5, 45, 85);
+
+pre {
+  padding: 8px 16px;
+  background: $bluegrey url("code.png") no-repeat center center / 32px 32px;
+  color: #eee;
+  font-family: Menlo, Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);
+  border-radius: 3px;
+}
